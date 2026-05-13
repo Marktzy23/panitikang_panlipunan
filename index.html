@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panitikang Panlipunan</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4e7d3;
+      color:#222;
+      line-height:1.6;
+    }
+
+    header{
+      background:#6d4c41;
+      color:white;
+      text-align:center;
+      padding:50px 20px;
+    }
+
+    header h1{
+      font-size:55px;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:20px;
+    }
+
+    nav{
+      background:#4e342e;
+      padding:15px;
+      text-align:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#ffd180;
+    }
+
+    section{
+      padding:60px 10%;
+    }
+
+    h2{
+      color:#6d4c41;
+      margin-bottom:25px;
+      font-size:40px;
+    }
+
+    .intro{
+      text-align:center;
+      font-size:18px;
+      margin-top:20px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:25px;
+      margin-top:30px;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      border-radius:18px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.2);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .card h3{
+      color:#5d4037;
+      margin-bottom:15px;
+      font-size:28px;
+    }
+
+    .example{
+      background:#fff3e0;
+      padding:15px;
+      border-left:5px solid #ff9800;
+      margin-top:15px;
+      border-radius:8px;
+    }
+
+    ul{
+      margin-left:25px;
+    }
+
+    footer{
+      background:#4e342e;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:50px;
+    }
+
+    .quote{
+      background:white;
+      padding:25px;
+      border-radius:15px;
+      margin-top:25px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      font-style:italic;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<header>
+
+  <h1>Panitikang Panlipunan</h1>
+
+  <p>
+    Ang panitikan bilang salamin ng kultura at lipunan ng Pilipinas
+  </p>
+
+</header>
+
+<nav>
+
+  <a href="#kahulugan">Kahulugan</a>
+  <a href="#uri">Uri</a>
+  <a href="#tuluyan">Tuluyan</a>
+  <a href="#patula">Patula</a>
+  <a href="#kahalagahan">Kahalagahan</a>
+
+</nav>
+
+<section id="kahulugan">
+
+  <h2>Kahulugan ng Panitikan</h2>
+
+  <p class="intro">
+
+    Ang panitikan ay mula sa salitang “titik”.
+    Ito ay kalipunan ng mga karanasan, damdamin,
+    kaisipan, at kultura ng tao. Ipinapakita nito
+    ang kalagayan ng lipunan at buhay ng mamamayan.
+
+  </p>
+
+  <div class="quote">
+
+    “Ang panitikan ay salamin ng buhay at lipunan.”
+
+  </div>
+
+</section>
+
+<section id="uri">
+
+  <h2>Uri ng Panitikan</h2>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <h3>Tuluyan o Prosa</h3>
+
+      <p>
+        Karaniwang anyo ng panitikan na gumagamit
+        ng mga pangungusap at talata.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Patula</h3>
+
+      <p>
+        Uri ng panitikan na gumagamit ng taludtod,
+        tugma, sukat, at malikhaing salita.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="tuluyan">
+
+  <h2>Mga Akdang Tuluyan</h2>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <h3>Alamat</h3>
+
+      <p>
+        Kuwento tungkol sa pinagmulan ng isang bagay,
+        lugar, o pangyayari.
+      </p>
+
+      <div class="example">
+
+        <b>Halimbawa: Ang Alamat ng Pinya</b><br><br>
+
+        May isang batang babae na nagngangalang Pinang
+        na tamad at ayaw tumulong sa kanyang ina.
+        Isang araw, hindi niya makita ang sandok kaya
+        paulit-ulit niyang tinanong ang kanyang ina.
+        Dahil sa galit, nasabi ng ina:
+        “Sana’y magkaroon ka ng maraming mata para makita mo!”
+        Nang mawala si Pinang, may tumubong halaman
+        na maraming mata kaya ito tinawag na pinya.
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Pabula</h3>
+
+      <p>
+        Kuwentong ang mga tauhan ay hayop ngunit
+        kumikilos at nagsasalita tulad ng tao.
+      </p>
+
+      <div class="example">
+
+        <b>Halimbawa: Ang Matsing at ang Pagong</b><br><br>
+
+        Nakakita ng puno ng saging ang matsing at pagong.
+        Hinati nila ito ngunit niloko ng matsing ang pagong.
+        Ang bahaging napunta sa pagong ay namunga,
+        samantalang namatay ang sa matsing.
+        Dahil sa inggit, inangkin ng matsing ang bunga
+        ngunit naparusahan siya kalaunan.
+        Ipinapakita ng kuwento na hindi mabuti ang pagiging sakim.
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Parabula</h3>
+
+      <p>
+        Kuwentong may aral at karaniwang hango
+        sa Bibliya.
+      </p>
+
+      <div class="example">
+
+        <b>Halimbawa: Ang Alibughang Anak</b><br><br>
+
+        Isang anak ang humingi ng mana sa kanyang ama
+        at nilustay ito sa masamang pamumuhay.
+        Nang siya ay maghirap, bumalik siya sa kanyang ama
+        upang humingi ng tawad.
+        Sa halip na magalit, masaya siyang tinanggap
+        at pinatawad ng kanyang ama.
+        Ang aral nito ay tungkol sa pagpapatawad at pagmamahal ng magulang.
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Maikling Kwento</h3>
+
+      <p>
+        Maikling salaysay na may mahalagang
+        pangyayari at aral.
+      </p>
+
+      <div class="example">
+
+        <b>Halimbawa: Ang Kwento ni Mabuti</b><br><br>
+
+        Si Mabuti ay isang gurong laging masayahin
+        at positibo sa harap ng kanyang mga estudyante.
+        Ngunit sa likod ng kanyang ngiti ay may tinatagong
+        mabigat na problema sa buhay.
+        Ipinapakita ng kuwento na may mga taong
+        marunong magpakatatag kahit nahihirapan.
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Nobela</h3>
+
+      <p>
+        Mahabang akdang pampanitikan na may
+        masalimuot na pangyayari.
+      </p>
+
+      <div class="example">
+
+        <b>Halimbawa: Noli Me Tangere</b><br><br>
+
+        Isinulat ni Dr. Jose Rizal ang nobelang ito upang
+        ipakita ang pang-aabuso ng mga Kastila sa mga Pilipino.
+        Umiikot ang kuwento kay Crisostomo Ibarra
+        na nais baguhin ang sistema ng lipunan.
+        Ipinapakita rito ang korapsyon, diskriminasyon,
+        at paghahangad ng kalayaan.
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Sanaysay</h3>
+
+      <p>
+        Akdang nagpapahayag ng kuro-kuro o
+        pananaw ng manunulat.
+      </p>
+
+      <div class="example">
+
+        <b>Halimbawa: Sa Kababaihang Taga-Malolos</b><br><br>
+
+        Sumulat si Jose Rizal ng liham para purihin
+        ang mga kababaihan ng Malolos dahil sa kanilang
+        katapangan at pagmamahal sa edukasyon.
+        Hinikayat niya ang mga Pilipina na maging matalino,
+        mapanindigan, at huwag magpaapi.
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Talumpati</h3>
+
+      <p>
+        Pagpapahayag ng opinyon o damdamin
+        sa harap ng maraming tao.
+      </p>
+
+      <div class="example">
+
+        <b>Halimbawa: Talumpati sa Pagtatapos</b><br><br>
+
+        Sa isang graduation speech, hinihikayat ng tagapagsalita
+        ang mga mag-aaral na mangarap at magsikap sa buhay.
+        Nagbibigay siya ng inspirasyon upang hindi sumuko
+        sa anumang pagsubok at patuloy na maniwala sa sarili.
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Balita</h3>
+
+      <p>
+        Nagbibigay impormasyon tungkol sa
+        kasalukuyang pangyayari.
+      </p>
+
+      <div class="example">
+
+        <b>Halimbawa: Balita Tungkol sa Bagyo</b><br><br>
+
+        Isang malakas na bagyo ang tumama sa Pilipinas
+        kaya maraming lugar ang binaha at nawalan ng kuryente.
+        Agad namang nagsagawa ng rescue operations
+        ang pamahalaan upang matulungan ang mga residente.
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="patula">
+
+  <h2>Mga Akdang Patula</h2>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <h3>Epiko</h3>
+
+      <p>
+        Mahabang tulang pasalaysay tungkol
+        sa kabayanihan.
+      </p>
+
+      <div class="example">
+
+        <b>Halimbawa: Biag ni Lam-ang</b><br><br>
+
+        Si Lam-ang ay isang bayaning may kakaibang lakas
+        at kakayahan mula pagkabata.
+        Hinarap niya ang maraming pagsubok upang ipaghiganti
+        ang kanyang ama at makamit ang pag-ibig ni Ines Kannoyan.
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Awit at Korido</h3>
+
+      <p>
+        Mga tulang pasalaysay na may
+        kababalaghan at pakikipagsapalaran.
+      </p>
+
+      <div class="example">
+
+        <b>Halimbawa: Ibong Adarna</b><br><br>
+
+        Naglakbay ang tatlong prinsipe upang hanapin
+        ang mahiwagang Ibong Adarna na makapagpapagaling
+        sa kanilang ama. Marami silang dinaanang pagsubok
+        bago nila natagpuan ang ibon.
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Tulang Liriko</h3>
+
+      <p>
+        Tulang nagpapahayag ng damdamin
+        at emosyon.
+      </p>
+
+      <div class="example">
+
+        <b>Halimbawa: Florante at Laura</b><br><br>
+
+        Isinalaysay dito ang buhay ni Florante
+        na nakaranas ng pagdurusa at pagtataksil.
+        Ipinakita rin sa akda ang pag-ibig,
+        katapatan, at kabayanihan.
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Tulang Patnigan</h3>
+
+      <p>
+        Patulang pakikipagtalo o paligsahan
+        ng talino.
+      </p>
+
+      <div class="example">
+
+        <b>Halimbawa: Balagtasan</b><br><br>
+
+        Ang Balagtasan ay isang paligsahan ng pagtatalo
+        gamit ang patula at masining na pananalita.
+        Karaniwang tinatalakay rito ang mga isyung panlipunan
+        at opinyon ng bawat panig.
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="kahalagahan">
+
+  <h2>Kahalagahan ng Panitikan</h2>
+
+  <ul>
+
+    <li>Nagpapakita ng kultura at tradisyon ng mga Pilipino.</li>
+
+    <li>Nagbibigay aral at inspirasyon.</li>
+
+    <li>Nagpapahayag ng damdamin at opinyon.</li>
+
+    <li>Nagpapalawak ng kaalaman tungkol sa lipunan.</li>
+
+    <li>Nagpapanatili ng kasaysayan ng bansa.</li>
+
+  </ul>
+
+</section>
+
+<footer>
+
+  <p>
+
+    © 2026 Panitikang Panlipunan Website <br>
+    Ginawa para sa asignaturang Filipino
+
+  </p>
+
+</footer>
+
+</body>
+</html>
