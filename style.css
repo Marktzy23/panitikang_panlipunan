@@ -740,3 +740,151 @@ tr:hover td{
   }
 
 }
+
+/* ================================= */
+/* MOBILE RESPONSIVE */
+/* ================================= */
+
+@media screen and (max-width: 768px){
+
+    /* NAVBAR */
+
+    nav{
+
+        padding:15px 10px;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+    }
+
+    nav ul{
+
+        gap:10px;
+    }
+
+    nav a{
+
+        font-size:13px;
+
+        padding:10px 12px;
+    }
+
+    /* LOGO */
+
+    .logo{
+
+        gap:10px;
+    }
+
+    .logo-circle{
+
+        width:55px;
+        height:55px;
+
+        font-size:35px;
+    }
+
+    .logo-text{
+
+        font-size:28px;
+
+        line-height:1.1;
+    }
+
+    /* HERO SECTION */
+
+    .hero{
+
+        padding:60px 20px;
+    }
+
+    .hero h1{
+
+        font-size:38px;
+
+        line-height:1.2;
+    }
+
+    .hero p{
+
+        font-size:18px;
+    }
+
+    /* RIZAL IMAGE */
+
+    .rizal-img{
+
+        width:150px;
+        height:150px;
+    }
+
+    /* SECTION */
+
+    section{
+
+        padding:50px 20px;
+    }
+
+    section h2{
+
+        font-size:38px;
+
+        text-align:center;
+    }
+
+    /* CARDS */
+
+    .cards{
+
+        grid-template-columns:1fr;
+    }
+
+    .card{
+
+        width:100%;
+    }
+
+    /* TABLE */
+
+    table{
+
+        display:block;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+    }
+
+    th, td{
+
+        font-size:14px;
+
+        padding:12px;
+    }
+
+    /* IMAGES */
+
+    .table-img{
+
+        width:80px;
+
+        height:80px;
+
+        object-fit:cover;
+
+        border-radius:10px;
+    }
+
+    /* DROPDOWN */
+
+    .dropdown-content{
+
+        left:auto;
+
+        right:0;
+
+        min-width:180px;
+    }
+
+}
