@@ -1,238 +1,752 @@
 <!DOCTYPE html>
 <html lang="tl">
+
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Panitikang Panlipunan</title>
 
-  <style>
+  <title>Panitikang Pilipino</title>
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body{
-      background:#f4e7d3;
-      color:#222;
-      line-height:1.6;
-    }
-
-    header{
-      background:#6d4c41;
-      color:white;
-      text-align:center;
-      padding:50px 20px;
-    }
-
-    header h1{
-      font-size:55px;
-      margin-bottom:10px;
-    }
-
-    header p{
-      font-size:20px;
-    }
-
-    nav{
-      background:#4e342e;
-      padding:15px;
-      text-align:center;
-      position:sticky;
-      top:0;
-      z-index:1000;
-    }
-
-    nav a{
-      color:white;
-      text-decoration:none;
-      margin:0 15px;
-      font-weight:bold;
-      transition:0.3s;
-    }
-
-    nav a:hover{
-      color:#ffd180;
-    }
-
-    section{
-      padding:60px 10%;
-    }
-
-    h2{
-      color:#6d4c41;
-      margin-bottom:25px;
-      font-size:40px;
-    }
-
-    .intro{
-      text-align:center;
-      font-size:18px;
-      margin-top:20px;
-    }
-
-    .cards{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-      gap:25px;
-      margin-top:30px;
-    }
-
-    .card{
-      background:white;
-      padding:25px;
-      border-radius:18px;
-      box-shadow:0 5px 15px rgba(0,0,0,0.2);
-      transition:0.3s;
-    }
-
-    .card:hover{
-      transform:translateY(-8px);
-    }
-
-    .card h3{
-      color:#5d4037;
-      margin-bottom:15px;
-      font-size:28px;
-    }
-
-    .example{
-      background:#fff3e0;
-      padding:15px;
-      border-left:5px solid #ff9800;
-      margin-top:15px;
-      border-radius:8px;
-    }
-
-    ul{
-      margin-left:25px;
-    }
-
-    footer{
-      background:#4e342e;
-      color:white;
-      text-align:center;
-      padding:20px;
-      margin-top:50px;
-    }
-
-    .quote{
-      background:white;
-      padding:25px;
-      border-radius:15px;
-      margin-top:25px;
-      box-shadow:0 4px 10px rgba(0,0,0,0.1);
-      font-style:italic;
-    }
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
+<!-- ========================= -->
+<!-- TOP BAR -->
+<!-- ========================= -->
+
+<div class="topbar">
+
+  <div class="socials">
+
+    <span>f</span>
+    <span>g+</span>
+
+  </div>
+
+</div>
+
+<!-- ========================= -->
+<!-- NAVIGATION -->
+<!-- ========================= -->
+
 <header>
 
-  <h1>Panitikang Panlipunan</h1>
+  <div class="logo-section">
 
-  <p>
-    Ang panitikan bilang salamin ng kultura at lipunan ng Pilipinas
-  </p>
+    <div class="logo-circle">
+      P
+    </div>
+
+    <div class="logo-text">
+
+      <span class="blue">
+        Panitikang
+      </span>
+
+      <span class="red">
+        Panlipunan
+      </span>
+
+    </div>
+
+  </div>
+
+  <nav>
+
+    <a class="active" href="#home">
+      HOME
+    </a>
+
+    <div class="dropdown">
+
+        <a href="#konsepto" class="dropbtn">PANITIKAN</a>
+        <div class="dropdown-content">
+          <a href="#anyo">Anyo ng Panitikan</a>
+
+        </div>
+
+    </div>
+
+    <a href="#tuluyan">
+      TULUYAN
+    </a>
+
+    <a href="#alamat">
+      ALAMAT
+    </a>
+
+    <a href="#anekdota">
+      ANEKDOTA
+    </a>
+
+    <div class="dropdown">
+
+        <a href="#talumpati" class="dropbtn">TALUMPATI</a>
+        <div class="dropdown-content">
+          <a href="#bahagi ng talumpati">Bahagi ng Talumpati</a>
+
+        </div>
+
+    </div>
+
+    <a href="#balita">
+      BALITA
+    </a>
+
+    <a href="#maikling-kwento">
+      MAIKLING KWENTO
+    </a>
+
+    <div class="dropdown">
+
+        <a href="#tula" class="dropbtn">TULA</a>
+
+        <div class="dropdown-content">
+
+          <a href="#sangkap ng tula">Sangkap ng Tula</a>
+
+          <a href="#anyo ng tula">Anyo ng Tula</a>
+
+          <a href="#uri ng tula">Uri ng Tula</a>
+
+        </div>
+
+    </div>
+
+
+  </nav>
 
 </header>
 
-<nav>
+<!-- ========================= -->
+<!-- HERO SECTION -->
+<!-- ========================= -->
 
-  <a href="#kahulugan">Kahulugan</a>
-  <a href="#uri">Uri</a>
-  <a href="#tuluyan">Tuluyan</a>
-  <a href="#patula">Patula</a>
-  <a href="#kahalagahan">Kahalagahan</a>
+<section class="hero" id="home">
 
-</nav>
+  <div class="hero-overlay"></div>
 
-<section id="kahulugan">
+  <div class="hero-content">
 
-  <h2>Kahulugan ng Panitikan</h2>
+    <div class="hero-left">
 
-  <p class="intro">
+      <h1>
+        Maligayang Pagdating!
+      </h1>
 
-    Ang panitikan ay mula sa salitang “titik”.
-    Ito ay kalipunan ng mga karanasan, damdamin,
-    kaisipan, at kultura ng tao. Ipinapakita nito
-    ang kalagayan ng lipunan at buhay ng mamamayan.
+      <p>
 
-  </p>
+        Tuklasin ang kasaysayan,
+        uri,
+        anyo,
+        at yaman
+        ng Panitikang Panlipunan.
 
-  <div class="quote">
+      </p>
 
-    “Ang panitikan ay salamin ng buhay at lipunan.”
+      <button>
+        TUNGKOL SA SITE
+      </button>
+
+    </div>
+
+    <div class="hero-right">
+
+      <div class="hero-image-box">
+
+        <img class="rizal-img" src="images/rizal.jpg">
+
+      </div>
+
+    </div>
 
   </div>
 
 </section>
 
-<section id="uri">
+<!-- ========================= -->
+<!-- KONSEPTO -->
+<!-- ========================= -->
 
-  <h2>Uri ng Panitikan</h2>
+<section id="konsepto">
+
+  <h2>
+    Konsepto ng Panitikan
+  </h2>
+
+  <div class="content-box">
+
+    <ul class="concept-list">
+
+  <li>
+    Nagmula sa salitang titik o letra.
+    PANG + TITIK + AN = PANITIKAN
+  </li>
+
+  <li>
+    Kalipunan ng karanasan,
+    kaisipan,
+    at damdamin ng tao.
+  </li>
+
+  <li>
+    Repleksiyon ng kultura at lipunan.
+  </li>
+
+</ul>
+
+  </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- ANYO -->
+<!-- ========================= -->
+
+<section id="anyo">
+
+  <h2>
+    Dalawang Anyo ng Panitikan
+  </h2>
 
   <div class="cards">
 
     <div class="card">
 
-      <h3>Tuluyan o Prosa</h3>
+      <h3>
+        Tuluyan o Prosa
+      </h3>
 
       <p>
-        Karaniwang anyo ng panitikan na gumagamit
-        ng mga pangungusap at talata.
+
+        Paatalata at nasa karaniwang
+        takbo ng pangungusap.
+
       </p>
+
+      <div class="example">
+
+        Halimbawa:
+        alamat,
+        nobela,
+        maikling kwento,
+        parabula,
+        at pabula.
+
+      </div>
 
     </div>
 
     <div class="card">
 
-      <h3>Patula</h3>
+      <h3>
+        Patula
+      </h3>
 
       <p>
-        Uri ng panitikan na gumagamit ng taludtod,
-        tugma, sukat, at malikhaing salita.
+
+        Pataludtod,
+        may sukat at tugma
+        o malayang taludturan.
+
       </p>
+
+      <div class="example">
+
+        Halimbawa:
+        tulang pasalaysay,
+        liriko,
+        dramatiko,
+        at patnigan.
+
+      </div>
 
     </div>
 
   </div>
 
 </section>
+
+<!-- ========================= -->
+<!-- TULUYAN -->
+<!-- ========================= -->
 
 <section id="tuluyan">
 
-  <h2>Mga Akdang Tuluyan</h2>
+  <h2>
+    Mga Uri ng Tuluyan
+  </h2>
+
+  <div class="table-box">
+
+    <table>
+
+      <thead>
+
+        <tr>
+
+          <th>URI</th>
+          <th>KAHULUGAN</th>
+          <th>HALIMBAWA</th>
+          <th>IMAHE</th>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr>
+
+          <td>Alamat</td>
+
+          <td>
+
+            Uri ng panitikan
+            na nagsasalaysay
+            ng pinagmulan
+            ng mga bagay-bagay.
+
+          </td>
+
+          <td>
+
+            Ang Alamat ng Pinya
+
+          </td>
+
+          <td>
+          <img src="images/alamat.jpg" class="table-img">
+           </td>
+
+        </tr>
+
+        <tr>
+
+          <td>Anekdota</td>
+
+          <td>
+
+            Maikling kuwento
+            tungkol sa totoong pangyayari.
+
+          </td>
+
+          <td>
+
+            Tsinelas ni Rizal
+
+          </td>
+
+          <td>
+          <img src="images/anekdota.jpg" class="table-img">
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>Pabula</td>
+
+          <td>
+
+            Kuwentong hayop
+            na may aral.
+
+          </td>
+
+          <td>
+
+            Si Matsing at si Pagong
+
+          </td>
+
+          <td>
+          <img src="images/pabula.jpg" class="table-img">
+           </td>
+
+        </tr>
+
+        <tr>
+
+          <td>Parabula</td>
+
+          <td>
+
+            Kuwentong mula sa Bibliya
+            na may aral.
+
+          </td>
+
+          <td>
+
+            Ang Alibughang Anak
+
+          </td>
+
+          <td>
+         <img src="images/parabula.jpg" class="table-img">
+         </td>
+
+        </tr>
+
+        <tr>
+
+          <td>Sanaysay</td>
+
+          <td>
+
+            Pagpapahayag ng opinyon
+            o pananaw ng may-akda.
+
+          </td>
+
+          <td>
+
+            Ang Pag-ibig
+
+          </td>
+
+          <td>
+          <img src="images/sanaysay.jpg" class="table-img">
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>Talambuhay</td>
+
+          <td>
+
+            Kasaysayan ng buhay
+            ng isang tao.
+
+          </td>
+
+          <td>
+
+            Talambuhay ni Mabini
+
+          </td>
+
+          <td>
+          <img src="images/talambuhay.jpg" class="table-img">
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>Talumpati</td>
+
+          <td>
+
+            Pormal na pagpapahayag
+            sa harap ng tao.
+
+          </td>
+
+          <td>
+
+            SONA
+
+          </td>
+
+          <td>
+          <img src="images/talumpati.jpg" class="table-img">
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>Balita</td>
+
+          <td>
+
+            Ulat ukol sa napapanahong pangyayari.
+
+          </td>
+
+          <td>
+
+            Balita tungkol sa bagyo
+
+          </td>
+
+          <td>
+          <img src="images/balita.jpg" class="table-img">
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>Nobela</td>
+
+          <td>
+
+            Mahabang akdang pampanitikan.
+
+          </td>
+
+          <td>
+
+            Noli Me Tangere
+
+          </td>
+
+          <td>
+          <img src="images/nobela.jpg" class="table-img">
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>Maikling Kwento</td>
+
+          <td>
+
+            Maikling salaysay
+            na may mahalagang pangyayari.
+
+          </td>
+
+          <td>
+
+            Kwento ni Mabuti
+
+          </td>
+
+          <td>
+          <img src="images/maikling-kwento.jpg" class="table-img">
+          </td>
+
+        </tr>
+
+        <td>Mitolohiya</td>
+
+          <td>
+
+             ay isang koleksyon ng mga kwentong-bayan, alamat, at paniniwala tungkol 
+              sa mga diyos, diyosa, at mga kakaibang nilalang.
+
+          </td>
+
+          <td>
+
+            Si Malakas at si Maganda
+
+          </td>
+
+          <td>
+          <img src="images/mitolohiya.jpg" class="table-img">
+          </td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- ALAMAT -->
+<!-- ========================= -->
+
+<section id="alamat">
+
+  <h2>
+    Mga Elemento ng Alamat
+  </h2>
 
   <div class="cards">
 
     <div class="card">
 
-      <h3>Alamat</h3>
+      <h3>
+        Tauhan
+      </h3>
 
       <p>
-        Kuwento tungkol sa pinagmulan ng isang bagay,
-        lugar, o pangyayari.
+         mga karakter sa kuwento.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Tagpuan
+      </h3>
+
+      <p>
+         lugar at panahon kung saan nangyari ang kuwento.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Banghay
+      </h3>
+
+      <p>
+         pagkakasunod-sunod ng mga pangyayari.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Suliranin
+      </h3>
+
+      <p>
+         problemang kinaharap ng mga tauhan.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Kasukdulan
+      </h3>
+
+      <p>
+         pinakamataas o pinakakapanabik na bahagi ng kuwento.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Wakas
+      </h3>
+
+      <p>
+         katapusan ng kuwento.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- ANEKDOTA -->
+<!-- ========================= -->
+
+<section id="anekdota">
+
+  <h2>
+    Katangian at Layunin ng Anekdota
+  </h2>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <h3>
+        Katangian
+      </h3>
+
+      <ul class="concept-list">
+
+        <li>
+          Maikli at diretso ang kuwento.
+        </li>
+
+        <li>
+          Nakakatawa o kapupulutan ng aral.
+        </li>
+
+        <li>
+          Hango sa totoong pangyayari.
+        </li>
+
+        <li>
+          Madaling maunawaan.
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Layunin
+      </h3>
+
+      <ul class="concept-list">
+
+        <li>
+          Magbigay-aliw.
+        </li>
+
+        <li>
+          Magbahagi ng karanasan.
+        </li>
+
+        <li>
+          Magturo ng aral.
+        </li>
+
+        <li>
+          Magbigay inspirasyon.
+        </li>
+
+      </ul>
+
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ========================= -->
+<!-- TALUMPATI -->
+<!-- ========================= -->
+
+<section id="talumpati">
+
+  <h2>
+    Mga Uri ng Talumpati
+  </h2>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <h3>
+        Impormatibo
+      </h3>
+
+      <p>
+
+        Nagbibigay ng kaalaman o impormasyon.
+
       </p>
 
       <div class="example">
 
-        <b>Halimbawa: Ang Alamat ng Pinya</b><br><br>
-
-        May isang batang babae na nagngangalang Pinang
-        na tamad at ayaw tumulong sa kanyang ina.
-        Isang araw, hindi niya makita ang sandok kaya
-        paulit-ulit niyang tinanong ang kanyang ina.
-        Dahil sa galit, nasabi ng ina:
-        “Sana’y magkaroon ka ng maraming mata para makita mo!”
-        Nang mawala si Pinang, may tumubong halaman
-        na maraming mata kaya ito tinawag na pinya.
+        Halimbawa:
+         Talumpati tungkol sa epekto ng climate change..
 
       </div>
 
@@ -240,24 +754,21 @@
 
     <div class="card">
 
-      <h3>Pabula</h3>
+      <h3>
+        Persweysib
+      </h3>
 
       <p>
-        Kuwentong ang mga tauhan ay hayop ngunit
-        kumikilos at nagsasalita tulad ng tao.
+
+        Nanghihikayat
+        upang maniwala ang tao.
+
       </p>
 
       <div class="example">
 
-        <b>Halimbawa: Ang Matsing at ang Pagong</b><br><br>
-
-        Nakakita ng puno ng saging ang matsing at pagong.
-        Hinati nila ito ngunit niloko ng matsing ang pagong.
-        Ang bahaging napunta sa pagong ay namunga,
-        samantalang namatay ang sa matsing.
-        Dahil sa inggit, inangkin ng matsing ang bunga
-        ngunit naparusahan siya kalaunan.
-        Ipinapakita ng kuwento na hindi mabuti ang pagiging sakim.
+        Halimbawa:
+          Panghihikayat sa kabataan na bumoto nang tama.
 
       </div>
 
@@ -265,24 +776,21 @@
 
     <div class="card">
 
-      <h3>Parabula</h3>
+      <h3>
+        Inspirasyonal
+      </h3>
 
       <p>
-        Kuwentong may aral at karaniwang hango
-        sa Bibliya.
+
+        Nagbibigay inspirasyon
+        at lakas ng loob.
+
       </p>
 
       <div class="example">
 
-        <b>Halimbawa: Ang Alibughang Anak</b><br><br>
-
-        Isang anak ang humingi ng mana sa kanyang ama
-        at nilustay ito sa masamang pamumuhay.
-        Nang siya ay maghirap, bumalik siya sa kanyang ama
-        upang humingi ng tawad.
-        Sa halip na magalit, masaya siyang tinanggap
-        at pinatawad ng kanyang ama.
-        Ang aral nito ay tungkol sa pagpapatawad at pagmamahal ng magulang.
+        Halimbawa:
+           Talumpati para sa mga nagsisipagtapos.
 
       </div>
 
@@ -290,23 +798,20 @@
 
     <div class="card">
 
-      <h3>Maikling Kwento</h3>
+      <h3>
+        Panlibangan
+      </h3>
 
       <p>
-        Maikling salaysay na may mahalagang
-        pangyayari at aral.
+
+        Layuning magbigay aliw.
+
       </p>
 
       <div class="example">
 
-        <b>Halimbawa: Ang Kwento ni Mabuti</b><br><br>
-
-        Si Mabuti ay isang gurong laging masayahin
-        at positibo sa harap ng kanyang mga estudyante.
-        Ngunit sa likod ng kanyang ngiti ay may tinatagong
-        mabigat na problema sa buhay.
-        Ipinapakita ng kuwento na may mga taong
-        marunong magpakatatag kahit nahihirapan.
+        Halimbawa:
+            Speech sa birthday party o reunion.
 
       </div>
 
@@ -314,23 +819,20 @@
 
     <div class="card">
 
-      <h3>Nobela</h3>
+      <h3>
+        Demonstratibo
+      </h3>
 
       <p>
-        Mahabang akdang pampanitikan na may
-        masalimuot na pangyayari.
+
+        Nagtuturo kung paano gawin ang isang bagay.
+
       </p>
 
       <div class="example">
 
-        <b>Halimbawa: Noli Me Tangere</b><br><br>
-
-        Isinulat ni Dr. Jose Rizal ang nobelang ito upang
-        ipakita ang pang-aabuso ng mga Kastila sa mga Pilipino.
-        Umiikot ang kuwento kay Crisostomo Ibarra
-        na nais baguhin ang sistema ng lipunan.
-        Ipinapakita rito ang korapsyon, diskriminasyon,
-        at paghahangad ng kalayaan.
+        Halimbawa:
+           Pagpapakita kung paano gumawa ng eksperimento sa science.
 
       </div>
 
@@ -338,22 +840,20 @@
 
     <div class="card">
 
-      <h3>Sanaysay</h3>
+      <h3>
+        Biglaan
+      </h3>
 
       <p>
-        Akdang nagpapahayag ng kuro-kuro o
-        pananaw ng manunulat.
+
+        Talumpating ibinibigay nang walang sapat na paghahanda o "impromptu".
+
       </p>
 
       <div class="example">
 
-        <b>Halimbawa: Sa Kababaihang Taga-Malolos</b><br><br>
-
-        Sumulat si Jose Rizal ng liham para purihin
-        ang mga kababaihan ng Malolos dahil sa kanilang
-        katapangan at pagmamahal sa edukasyon.
-        Hinikayat niya ang mga Pilipina na maging matalino,
-        mapanindigan, at huwag magpaapi.
+        Halimbawa:
+           “Magandang araw sa inyong lahat. Bilang kinatawan ng aming klase, nais kong magpasalamat sa inyong suporta at pagtutulungan.”
 
       </div>
 
@@ -361,21 +861,20 @@
 
     <div class="card">
 
-      <h3>Talumpati</h3>
+      <h3>
+        Handa
+      </h3>
 
       <p>
-        Pagpapahayag ng opinyon o damdamin
-        sa harap ng maraming tao.
+
+         Talumpating pinag-aaralan, sinusulat, at pinaghahandaan bago bigkasin.
+
       </p>
 
       <div class="example">
 
-        <b>Halimbawa: Talumpati sa Pagtatapos</b><br><br>
-
-        Sa isang graduation speech, hinihikayat ng tagapagsalita
-        ang mga mag-aaral na mangarap at magsikap sa buhay.
-        Nagbibigay siya ng inspirasyon upang hindi sumuko
-        sa anumang pagsubok at patuloy na maniwala sa sarili.
+        Halimbawa:
+           Talumpati ng isang valedictorian sa graduation tungkol sa tagumpay at pangarap ng mga mag-aaral.
 
       </div>
 
@@ -383,22 +882,678 @@
 
     <div class="card">
 
-      <h3>Balita</h3>
+      <h3>
+        Pangretorika
+      </h3>
 
       <p>
-        Nagbibigay impormasyon tungkol sa
-        kasalukuyang pangyayari.
+
+          Talumpating gumagamit ng masining at makahikayat na pananalita upang maantig o makumbinsi ang mga tagapakinig.
+
       </p>
 
       <div class="example">
 
-        <b>Halimbawa: Balita Tungkol sa Bagyo</b><br><br>
+        Halimbawa:
+           Talumpati ng isang lider na humihikayat sa mga mamamayan na makiisa sa pangangalaga ng kalikasan.
 
-        Isang malakas na bagyo ang tumama sa Pilipinas
-        kaya maraming lugar ang binaha at nawalan ng kuryente.
-        Agad namang nagsagawa ng rescue operations
-        ang pamahalaan upang matulungan ang mga residente.
+      </div>
 
+    </div>
+
+  </div>
+</section>
+
+<section id="bahagi ng talumpati">
+
+    <h2>
+    Mga bahagi ng Talumpati
+  </h2>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <h3>
+        Panimula
+      </h3>
+
+      <p>
+
+         Bahaging nagpapakilala sa paksa at kumukuha ng atensyon ng tagapakinig.
+
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Katawan
+      </h3>
+
+      <p>
+
+         Pinakamahalagang bahagi kung saan inilalahad ang mga pangunahing ideya at paliwanag.
+
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Wakas
+      </h3>
+
+      <p>
+
+         Bahaging nagbibigay ng buod at panghuling mensahe sa tagapakinig.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- BALITA -->
+<!-- ========================= -->
+
+<section id="balita">
+
+  <h2>
+    Mga Katangian at Uri ng Balita
+  </h2>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <h3>
+        Katangian
+      </h3>
+
+      <ul class="concept-list">
+
+        <li>
+          Napapanahon
+        </li>
+
+        <li>
+          Mahalaga
+        </li>
+
+        <li>
+          Totoo at tumpak
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Uri
+      </h3>
+
+      <ul class="concept-list">
+
+        <li>
+          Balitang Pambansa
+        </li>
+
+        <li>
+          Balitang Pandaigdig
+        </li>
+
+        <li>
+          Balitang Pampalakasan
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- MAIKLING - KWENTO -->
+<!-- ========================= -->
+
+<section id="maikling-kwento">
+
+  <h2>
+    Mga Elemento ng Maikling Kwento
+  </h2>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <h3>
+        Tauhan
+      </h3>
+
+      <p>
+         Mga taong gumaganap sa kwento.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Tagpuan
+      </h3>
+
+      <p>
+         Lugar at panahon kung saan naganap ang kwento.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Banghay
+      </h3>
+
+      <p>
+         Pagkakasunod-sunod ng mga pangyayari sa kwento.
+
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Tunggalian
+      </h3>
+
+      <p>
+         Suliranin o labanang kinakaharap ng tauhan.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Tema
+      </h3>
+
+      <p>
+         Pangunahing aral o mensahe ng kwento.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Pananaw
+      </h3>
+
+      <p>
+          Paraan kung paano ikinukwento ang istorya.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Simbolo
+      </h3>
+
+      <p>
+          Bagay o pangyayaring may mas malalim na kahulugan.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================= -->
+<!-- TULA -->
+<!-- ========================= -->
+
+<section id="tula">
+
+  <h2>
+    Konsepto ng Tula
+  </h2>
+
+  <div class="content-box">
+
+    <p>
+
+      Ang tula ay isang uri ng panitikan
+      na nagpapahayag ng damdamin,
+      karanasan,
+      at imahinasyon
+      gamit ang piling salita,
+      tugma,
+      at sukat.
+
+    </p>
+
+    <div class="example">
+
+        Halimbawa:
+         <p>“Ang buhay ay parang hangin,</p>
+          <p> Minsan ay tahimik, minsan ay malalim.”</p>
+
+      </div>
+
+  </div>
+</section>
+
+<section id="sangkap ng tula">
+  <h2>
+    Mga Sangkap at Elemento ng Tula
+  </h2>
+
+  <div class="cards">
+
+     <div class="card">
+
+      <h3>
+        Saknong
+      </h3>
+
+      <p>
+        Grupo ng mga taludtod sa isang tula.
+      </p>
+
+      <div class="example">
+
+        Halimbawa:
+         <p>“Ang araw ay sumisikat,</p>
+          <p>  Liwanag ay sumasapit,”</p>
+           <p>   Bagong pag-asa'y hatid,”</p>
+            <p>   Sa bawat pusong sabik.”</p>
+          <br>
+          <em>(Ito ay isang saknong na may apat na taludtod.)
+          </em>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Taludtod
+      </h3>
+
+      <p>
+        Isang linya o hanay ng mga salita sa tula.
+      </p>
+
+      <div class="example">
+
+        Halimbawa:
+         <p>“Ang araw ay sumisikat"</p>
+          <br>
+          <em>(Ito ay isang taludtod.)
+          </em>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Tugma
+      </h3>
+
+      <p>
+        Pagkakatulad ng tunog
+        sa hulihan ng salita.
+      </p>
+
+      <div class="example">
+
+        Halimbawa:
+         <p>“Ang batang mabait ay minamahal,</p>
+          <p> Kaya siya'y laging dangal.”</p>
+          <br>
+          <em>(minamahal - dangal ay magkatugma)
+          </em>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Sukat
+      </h3>
+
+      <p>
+
+        Bilang ng pantig
+        sa bawat taludtod.
+
+      </p>
+
+      <div class="example">
+
+        Halimbawa:
+         <p>“Ang batang mabait ay minamahal"</p>
+          <br>
+          <em>(may anim na pantig o sukat.)
+          </em>
+
+      </div>
+
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Talinghaga
+      </h3>
+
+      <p>
+        Malalim na kahulugan
+        ng salita.
+      </p>
+
+      <div class="example">
+
+        Halimbawa:
+         <p>“Ilaw ng tahanan"</p>
+          <br>
+          <em>(tumutukoy sa ina)
+          </em>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Imahen
+      </h3>
+
+      <p>
+         Ang imahen ay mga salitang lumilikha ng malinaw na larawan sa isip ng mambabasa.
+      </p>
+
+      <div class="example">
+
+        Halimbawa:
+         <p>“Tahimik na sumasayaw ang mga dahon sa malamig na hangin.”</p>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Aliw-iw
+      </h3>
+
+      <p>
+         Ang aliw-iw ay ang himig o indayog ng pagbigkas ng tula.
+      </p>
+
+      <div class="example">
+
+        Halimbawa:
+         <p>“Mabagal na pagbigkas para sa malungkot na tula."</p>
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Tono
+      </h3>
+
+      <p>
+        Ang tono ay ang damdamin o emosyon na ipinapakita sa tula.
+      </p>
+
+      <div class="example">
+
+        Halimbawa:
+         <p>“masaya, malungkot, galit, atbp."</p>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Persona
+      </h3>
+
+      <p>
+        Ang persona ay ang nagsasalita o tinig sa loob ng tula.
+      </p>
+
+      <div class="example">
+
+        Halimbawa:
+         <p>“Isang anak na nagpapasalamat sa kanyang ina."</p>
+
+       </div>
+
+      </div>
+
+    </div>
+</section>
+
+<section id="anyo ng tula">
+   <h2>
+    Mga Anyo ng Tula
+  </h2>
+
+  <div class="cards">
+
+     <div class="card">
+
+      <h3>
+        Tradisyunal
+      </h3>
+
+      <p>
+        Ang tradisyunal na tula ay may sinusunod na tugma at sukat sa bawat taludtod.
+      </p>
+
+      <div class="example">
+
+        Halimbawa:
+         <p>Ang batang masipag sa gawain,</p>
+            <p>Nagiging huwaran sa atin.</p>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Malayang Taludturan
+      </h3>
+
+      <p>
+         Ang malayang taludturan ay tulang walang sinusunod na tugma at sukat.
+      </p>
+
+      <div class="example">
+
+        Halimbawa:
+         <p>Ako'y naglalakad</p>
+            <p>Sa tahimik na gabi</p>
+            <p>Habang iniisip</p>
+            <p>Ang takbo ng buhay.</p>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Blangko Berso
+      </h3>
+
+      <p>
+        Ang blangkong berso ay tulang may sukat ngunit walang tugma.
+      </p>
+
+      <div class="example">
+
+        Halimbawa:
+         <p>Ang araw ay muling sisikat</p>
+            <p> Sa bagong umagang darating.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="uri ng tula">
+
+  <h2>
+    Mga Uri ng Tula
+  </h2>
+
+  <div class="cards">
+
+     <div class="card">
+
+      <h3>
+        Pasalaysay
+      </h3>
+
+      <p>
+         Ang tulang pasalaysay ay uri ng tula na nagkukuwento ng mga pangyayari o pakikipagsapalaran.
+      </p>
+
+      <div class="example">
+
+          <ul class="concept-list">
+            Halimbawa:
+              <li>
+                Epiko
+              </li>
+              <li>
+                Awit
+              </li>
+              <li>
+                Korido
+              </li>
+            </ul>
+
+        <br>
+
+        <em>“Lumaban ang bayani para sa kanyang bayan.”</em>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        liriko
+      </h3>
+
+      <p>
+          Ang tulang liriko ay nagpapahayag ng damdamin, emosyon, at saloobin ng makata.
+      </p>
+
+      <div class="example">
+
+        Halimbawa:
+         <p>“Mahal kita nang buong puso,</p>
+            <p> Ikaw ang ligaya ko.”</p>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Dramatiko
+      </h3>
+
+      <p>
+        Ang tulang dramatiko ay isinulat upang itanghal o bigkasin sa entablado.
+      </p>
+
+      <div class="example">
+
+          <ul class="concept-list">
+            Halimbawa:
+              <li>
+                Monologo
+              </li>
+              <li>
+                Trahedya
+              </li>
+            </ul>
+
+        <br>
+
+        <em>“Bakit ako iniwan ng kapalaran?”</em>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Patnigan
+      </h3>
+
+      <p>
+         Ang tulang patnigan ay palitan ng katuwiran o pagtatalo gamit ang tula.
+      </p>
+
+      <div class="example">
+
+          <ul class="concept-list">
+            Halimbawa:
+              <li>
+                Balagtasan
+              </li>
+              <li>
+                Duplo
+              </li>
+            </ul>
+
+        <br>
+
+        <em>Unang Makata: “Pag-ibig ang tunay na mahalaga!”</em>
+        <em>Ikalawang Makata: “Karunungan ang higit na kailangan!”</em> 
+        
       </div>
 
     </div>
@@ -407,132 +1562,55 @@
 
 </section>
 
-<section id="patula">
-
-  <h2>Mga Akdang Patula</h2>
-
-  <div class="cards">
-
-    <div class="card">
-
-      <h3>Epiko</h3>
-
-      <p>
-        Mahabang tulang pasalaysay tungkol
-        sa kabayanihan.
-      </p>
-
-      <div class="example">
-
-        <b>Halimbawa: Biag ni Lam-ang</b><br><br>
-
-        Si Lam-ang ay isang bayaning may kakaibang lakas
-        at kakayahan mula pagkabata.
-        Hinarap niya ang maraming pagsubok upang ipaghiganti
-        ang kanyang ama at makamit ang pag-ibig ni Ines Kannoyan.
-
-      </div>
-
-    </div>
-
-    <div class="card">
-
-      <h3>Awit at Korido</h3>
-
-      <p>
-        Mga tulang pasalaysay na may
-        kababalaghan at pakikipagsapalaran.
-      </p>
-
-      <div class="example">
-
-        <b>Halimbawa: Ibong Adarna</b><br><br>
-
-        Naglakbay ang tatlong prinsipe upang hanapin
-        ang mahiwagang Ibong Adarna na makapagpapagaling
-        sa kanilang ama. Marami silang dinaanang pagsubok
-        bago nila natagpuan ang ibon.
-
-      </div>
-
-    </div>
-
-    <div class="card">
-
-      <h3>Tulang Liriko</h3>
-
-      <p>
-        Tulang nagpapahayag ng damdamin
-        at emosyon.
-      </p>
-
-      <div class="example">
-
-        <b>Halimbawa: Florante at Laura</b><br><br>
-
-        Isinalaysay dito ang buhay ni Florante
-        na nakaranas ng pagdurusa at pagtataksil.
-        Ipinakita rin sa akda ang pag-ibig,
-        katapatan, at kabayanihan.
-
-      </div>
-
-    </div>
-
-    <div class="card">
-
-      <h3>Tulang Patnigan</h3>
-
-      <p>
-        Patulang pakikipagtalo o paligsahan
-        ng talino.
-      </p>
-
-      <div class="example">
-
-        <b>Halimbawa: Balagtasan</b><br><br>
-
-        Ang Balagtasan ay isang paligsahan ng pagtatalo
-        gamit ang patula at masining na pananalita.
-        Karaniwang tinatalakay rito ang mga isyung panlipunan
-        at opinyon ng bawat panig.
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<section id="kahalagahan">
-
-  <h2>Kahalagahan ng Panitikan</h2>
-
-  <ul>
-
-    <li>Nagpapakita ng kultura at tradisyon ng mga Pilipino.</li>
-
-    <li>Nagbibigay aral at inspirasyon.</li>
-
-    <li>Nagpapahayag ng damdamin at opinyon.</li>
-
-    <li>Nagpapalawak ng kaalaman tungkol sa lipunan.</li>
-
-    <li>Nagpapanatili ng kasaysayan ng bansa.</li>
-
-  </ul>
-
-</section>
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
 
 <footer>
 
-  <p>
+  <footer class="custom-footer">
 
-    © 2026 Panitikang Panlipunan Website <br>
-    Ginawa para sa asignaturang Filipino
+    <div class="footer-container">
 
-  </p>
+        <h2>Cavite State University - Carmona Campus</h2>
+
+        <h3>Department of Arts and Sciences</h3>
+
+        <p class="footer-subtitle">
+            Pinal na Pagsusulit sa Panitikang Panlipunan
+        </p>
+
+        <hr>
+
+        <div class="group-section">
+
+            <h3>Mga Tagabuo (BSCpE-4C @ 2026):</h3>
+
+            <div class="members-box">
+
+                <p>Albuero, Aien Nicole O.</p>
+                <p>Balbastro, Jaymark P.</p>
+                <p>Bellen, Lenard S.</p>
+                <p>Capiña, John Benedict M.</p>
+                <p>Dalimocon, Jana Daniela D.</p>
+                <p>Fernandez, Justin S.</p>
+
+
+            </div>
+
+        </div>
+
+        <p class="teacher">
+            <i>Ipinasa kay: Inst. Kristine S. Coroza</i>
+        </p>
+
+        <br>
+
+        <p>
+         © 2026 Panitikang Panlipunan
+        </p>
+
+  </div>
 
 </footer>
 
